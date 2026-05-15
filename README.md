@@ -1,6 +1,4 @@
-# create-boilerplate-vite-react-ts
-
-[![npm version](https://badge.fury.io/js/create-boilerplate-vite-react-ts.svg)](https://badge.fury.io/js/create-boilerplate-vite-react-ts)
+# @getsoren/create-boilerplate-vite-react-ts
 
 > Create quickly a skeleton of `Vite React TypeScript`
 application with amazing configuration.
@@ -13,21 +11,23 @@ application with amazing configuration.
 
 **bun:**
 ```bash
-bun create boilerplate-vite-react-ts YOUR_APP_NAME
+bun create @getsoren/boilerplate-vite-react-ts YOUR_APP_NAME
 ```
 
 **npm:**
 ```bash
-npm create boilerplate-vite-react-ts YOUR_APP_NAME
+npm create @getsoren/boilerplate-vite-react-ts YOUR_APP_NAME
 ```
 **yarn**:
 ```bash
-yarn create boilerplate-vite-react-ts YOUR_APP_NAME
+yarn create @getsoren/boilerplate-vite-react-ts YOUR_APP_NAME
 ```
 **pnpm**:
 ```bash
-pnpm create boilerplate-vite-react-ts YOUR_APP_NAME
+pnpm create @getsoren/boilerplate-vite-react-ts YOUR_APP_NAME
 ```
+
+> Note: `npm create @scope/foo` is equivalent to `npm init @scope/foo`, which resolves to the package `@scope/create-foo`.
 
 ## Optional params
 
@@ -44,7 +44,7 @@ some popular libraries.
 example:
 
 ```console
-npm create boilerplate-vite-react-ts YOUR_APP_NAME --axios --i18next
+npm create @getsoren/boilerplate-vite-react-ts YOUR_APP_NAME --axios --i18next
 ```
 
 ## Files structure

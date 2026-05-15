@@ -1,17 +1,18 @@
 {
-  "name": "create-boilerplate-vite-react-ts",
+  "name": "@getsoren/create-boilerplate-vite-react-ts",
   "description": "Start a Vite React TypeScript project in few second !",
   "private": false,
   "license": "ISC",
   "version": "2.7.1",
   "type": "module",
   "author": "Mickaël Austoni",
-  "homepage": "https://github.com/Tracktor/create-boilerplate-vite-react-ts#readme",
+  "homepage": "https://github.com/getsoren/create-boilerplate-vite-react-ts#readme",
   "repository": {
-    "url": "https://github.com/Tracktor/create-boilerplate-vite-react-ts"
+    "type": "git",
+    "url": "git+https://github.com/getsoren/create-boilerplate-vite-react-ts.git"
   },
   "bugs": {
-    "url": "https://github.com/Tracktor/create-boilerplate-vite-react-ts/issues"
+    "url": "https://github.com/getsoren/create-boilerplate-vite-react-ts/issues"
   },
   "bin": {
     "create-boilerplate-vite-react-ts": "bin/create-app.cjs"
@@ -23,7 +24,8 @@
     "lint": "eslint . --max-warnings=0 && tsc --noEmit",
     "preview": "vite preview",
     "test": "yarn lint && vitest",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "release": "commit-and-tag-version"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -37,12 +39,13 @@
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
     "@vitejs/plugin-react": "^3.1.0",
-    "eslint-config-react-tracktor": "^1.5.0",
+    "@getsoren/eslint-config-react-soren": "^1.14.0",
     "husky": "^8.0.3",
     "jsdom": "^22.1.0",
     "typescript": "^4.9.5",
     "vite": "^4.3.9",
-    "vitest": "^0.32.2"
+    "vitest": "^0.32.2",
+    "commit-and-tag-version": "^12.6.0"
   },
   "keywords": [
     "react",
@@ -53,5 +56,9 @@
     "react-query",
     "javascript",
     "typescript"
-  ]
+  ],
+  "commit-and-tag-version": {
+    "releaseCommitMessageFormat": "chore(release): {{currentTag}} [skip ci]",
+    "tagPrefix": ""
+  }
 }
