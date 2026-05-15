@@ -3,7 +3,7 @@
   "description": "Start a Vite React TypeScript project in few second !",
   "private": false,
   "license": "ISC",
-  "version": "2.7.1",
+  "version": "2.7.2",
   "type": "module",
   "author": "Mickaël Austoni",
   "homepage": "https://github.com/getsoren/create-boilerplate-vite-react-ts#readme",
